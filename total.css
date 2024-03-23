@@ -1,0 +1,357 @@
+body{
+    background-image: linear-gradient(to right, #EEEEEE, #DDDDDD, #627254);
+}
+.col-md{
+    padding: 3rem;
+    border: 3px solid #fff;
+    background-color: rgb(112, 157, 93);
+    
+}
+
+.logo {
+    width: 50px; /* Đặt chiều rộng */
+    height: auto; /* Tự động tính chiều cao dựa trên tỷ lệ khung hình gốc */
+    margin-top: 10px; /* Đặt khoảng cách từ trên xuống */
+    margin-left: 20px; /* Đặt khoảng cách từ trái qua */
+    border: 1px solid #000; /* Thêm viền đen với độ rộng 1px */
+    border-radius: 5px; /* Bo góc ảnh */
+  }
+  .introduce {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  .sale-product,.item {
+    width: 100%;
+    clear: both;
+    padding-left: 125px;
+   }
+  .sale-product .card , .Best-seller .card ,.card{
+    float: left;
+  margin-right: 10px;
+  }
+  .Best-seller, .item {
+    width: 100%;
+    clear: both;
+    padding-left: 100px;
+  }
+.orange{
+  color: #92e277;
+  
+}
+#banner {
+  width: 100%;
+  padding: 50px 0 50px 0;
+}
+
+#search {
+  font-size: 20px; 
+  color: #36692c; 
+  width: 60px;
+}
+
+#themebutton {
+  font-size: 20px;
+  width: 60px;
+  color: #76885B; 
+  margin-left: 10px;
+}
+
+#tb {
+  padding: 10px 10px 10px 10px;
+}
+/* Trang Sản Phẩm */
+.cart_page {
+  padding: 75px 0 0 0;
+}
+.select-Item div  {
+  width: 100%;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.name-item-font:hover {
+  color:rgb(61, 250, 71);
+  cursor: pointer; /*di chuột lên tên sản phẩm thì đổi màu tên sản phẩm*/
+}
+.btn-primary {
+  visibility: hidden; 
+  /* ẩn nút thêm vào giỏ hàng */
+}
+div.card:hover .btn-primary {
+  visibility: visible;
+  /* khi di chuyển chuột vào từ sản phẩm mới hiển thị nút thêm sản phẩm vào giỏ hàng */
+}
+div.card{
+  margin:10px;
+  border: 4px solid rgba(0,0, 0, 0);
+}
+div.card:hover {
+  border:4px solid #d2c8b3;
+}
+.card-title:hover {
+  color:rgb(83, 255, 64);
+  cursor: pointer; /*di chuột lên tên sản phẩm thì đổi màu tên sản phẩm*/
+}
+div.card:hover .card-body {
+  transform: scale(1.1);
+  /* kích thước của 1 sản phẩm sẽ to gấp 1,1 lần ban đầu khi 
+  di chuyển chuột vào thẻ div có class là card chứa sản phẩm */
+}
+div.card:hover img {
+  transform: scale(0.95);
+}
+body > .container {
+  padding: 60px 15px;
+}
+/* footer */
+#footer .row .col-sm{
+  margin-top: 30px;
+}
+.unorderlist a{
+  color: black; /* Đặt màu chữ là đen */
+  text-decoration: none; /* Loại bỏ gạch chân của các link dẫn đến các trang chính sách */
+}
+.unorderlist a:hover{
+  color: rgb(0, 255, 149);
+  text-decoration:underline;
+  /* khi hover vào list chính sách thì sẽ có màu xanh mà có gạch chân dưới link */
+}
+/* css các icon mạng xã hội: facebook, youtube, instagram, tiktok */
+.social{
+  display:flex
+}
+.social a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 30px;
+  margin: 4px 5px;
+}
+.social a:hover {
+  scale: 1.2;
+  transition: 0.45s;
+  border: 4px solid #45ff48;
+}
+.atm img {
+  width: 30%;
+}
+.atm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
+  width: 300px;
+  gap: 10px;
+}
+.atm-content{
+  margin-bottom: 4px;
+}
+.unorderlist{
+  list-style-type: none; /* Tạo 1 unorderlist không có dấu chấm mặc định */
+  padding: 0;
+  margin: 0;
+}
+#footer{
+  background-color: rgb(205, 246, 206);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.box-content{
+  display: flex;
+  margin: 80px  ;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail{
+  text-align: justify ;
+}
+/* kí hiệu trở về đầu trang web */
+header .home a {
+  position: fixed; /* Vị trí cố định: giữ nguyên vị trí của icon ngay cả khi cuộn trang web*/
+  right: 2%;
+  bottom: 3%;
+  font-size: 3rem;
+  color:rgb(0, 255, 47);
+  z-index: 100;  /*icon sẽ đè lên tất cả các phần tử trên trang web  */
+}
+
+header .home a:hover {
+  color:green;
+   transform: scale(1.2); 
+}
+
+/* Hết phần footer */
+/* css phần body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Css cho icon chức năng chat  */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  left: 2%;
+  bottom: 3%;
+  margin: 4px 5px;
+  background-color: rgb(8, 103, 8);
+  color: white;
+  border: none;
+  border-radius:60%;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+/* Css cho chat-box hiển thị ra màn hình khi click vào chat-icon */
+.chat-box {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  left: 20px;
+  max-width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+/* Khi di chuyển chuột lên chat-icon thì icon này sẽ tăng kích cỡ lên 1.1 lần */
+.chat-icon:hover{
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  background-color: rgb(123, 255, 0);
+}
+/* css phần header của  icon có class là chat-box */
+.chat-header {
+  background-color: rgb(8, 103, 8);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+/* css cho icon có class là close-button */
+.close-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 30px;
+
+}
+/* css cho khung nhập tin nhắn */
+.chat-content {
+  height: 200px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+}
+/* css cho nút gửi tin nhắn */
+.chat-input button {
+  padding: 8px;
+  background-color:rgb(8, 103, 8);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.chat-input button:hover{
+  background-color: rgb(85, 255, 0);
+}
+
+.img {
+  position: relative;
+  display: inline-block;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(190, 175, 175, 0.5); /* Màu nền của phần chữ khi hiển thị */
+  color: #fff; /* Màu chữ */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.img:hover .text {
+  opacity: 1;
+}
+/* Ví dụ sử dụng Media Queries cho các kích thước màn hình phổ biến */
+
+/* Điều chỉnh layout khi kích thước màn hình nhỏ hơn 768px */
+@media screen and (max-width: 768px) {
+  .col-md {
+    padding: 1.5rem; /* Giảm padding */
+  }
+  /* Điều chỉnh chiều rộng của hình ảnh */
+  .logo {
+    width: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  /* Điều chỉnh các phần tử trong sản phẩm */
+  .sale-product .card,
+  .Best-seller .card,
+  .card {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    float: none; /* Không sử dụng float */
+    margin-right: 0; /* Loại bỏ margin */
+  }
+  /* Điều chỉnh khoảng cách của footer */
+  #footer .row .col-sm {
+    margin-top: 10px;
+  }
+}
+
+/* Điều chỉnh layout khi kích thước màn hình nhỏ hơn 576px */
+@media screen and (max-width: 576px) {
+  .col-md {
+    padding: 1rem; /* Giảm padding */
+  }
+  /* Điều chỉnh kích thước của các phần tử */
+  .logo {
+    width: 20px;
+    margin-top: 3px;
+    margin-left: 5px;
+  }
+  /* Điều chỉnh layout của sản phẩm */
+  .sale-product .card,
+  .Best-seller .card,
+  .card {
+    padding-left: 15px; /* Giảm padding */
+  }
+}
+
+
+
+
+
+
+
