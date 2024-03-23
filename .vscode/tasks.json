@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "install",
+			"path": "assets/aos-master",
+			"group": "clean",
+			"problemMatcher": [],
+			"label": "npm: install - assets/aos-master",
+			"detail": "install dependencies from package"
+		}
+	]
+}

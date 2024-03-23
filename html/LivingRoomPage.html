@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="FURNITURE/aboutRegal-page.html">
+    <link rel="stylesheet" href="FURNITURE/favorite-page.html">
+    <link rel="stylesheet" href="FURNITURE/product-page.html">
+    <link rel="stylesheet" href="FURNITURE/service-page.html"> -->
+    <link rel="stylesheet" href="../total.css">
+    <link rel="stylesheet" href="../assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="../assets/bootstrap-5.3.2-dist/js//bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="short cut icon" href="../images/Logo.png" type="image/vnd.microsoft.icon">
+    <script src="../js/cart.js" defer></script>
+    <script src="../js/favorite.js" defer></script>
+    <title>Lộc Trời | Hữu Cơ Sinh Học</title>
+</head>
+<body>
+<!-- phần Header, bao gồm thanh điều hướng, nút đăng ký, đăng nhập, nút tìm kiếm, nút vào giỏ hàng và nút vào các sản phẩm yêu thích -->
+<header>
+  <!--icon có class"fa-solid fa-circle-chevron-up" khi nhấn vào sẽ về đầu trang-->
+  <div class="home"><a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a></div>
+  <div class="header-container">
+     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../images/Logo.png" alt="Logo" width="60" height="30"  class="d-inline-block align-text-top">
+            </a>
+            <a class="navbar-brand" href="../index.html">Trang Chủ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sản Phẩm
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="KitchenPage.html">Giống Cây Trồng</a></li>
+                      <li><a class="dropdown-item" href="LivingRoomPage.html">Hữu Cơ Sinh Học</a></li>
+                      <li><a class="dropdown-item" href="bedroomPage.html">Nông Dược</a></li>
+                      <li><a class="dropdown-item" href="workRoom.html">Phân Bón</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./favorite-page.html">Sản Phẩm Yêu Thích</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dịch Vụ
+                  </a>  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./sale_policy.html">Chính Sách Bán Hàng</a></li>
+                    <li><a class="dropdown-item" href="./ship.html">Chính Sách Giao Hàng</a></li>
+                    <li><a class="dropdown-item" href="./return_Policy.html">Chính Sách Đổi Trả</a></li>
+                    <li><a class="dropdown-item" href="./warrantly.html">Chính Sách Bảo Hành</a></li>
+                    <li><a class="dropdown-item" href="./G_vip.html">Khách Hàng Thân Thiết - G.VIP</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                <button id="search" class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a id="themebutton" class="btn btn-outline-success" role="button" href="./login.html"><i class="fa-solid fa-user"></i></a>
+                <a id="themebutton" class="btn btn-outline-success" role="button" href="./cart_page.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a id="themebutton" class="btn btn-outline-success" role="button" href="./favorite-page.html"><i class="fa-solid fa-heart"></i></a>
+              </form>
+            </div>
+          </div>
+        </nav>
+  </div>
+</header>
+      <main>
+        <img src="../images/main_image/phongkhach.jpg" alt="Phòng khách" style="width: 100%; height: auto; object-fit: cover; " >
+<!--Phần sản phẩm: sử dụng các thẻ div có class là "card" được hỗ trợ bởi boostrap5 để hiển thị từng sản phẩm
+dùng class "item " để hiển thị các sản phẩm thống nhất với nhau-->
+<!--Thẻ s để tạo một nội dung bị gạch ngang, dùng để hiển thị phần giá của sản phẩm trc khi được giảm giá-->
+<!--class "card title", "name-item-font", "card-text", "name-item-font", "btn bnt primary" được hỗ trợ bởi bootstrap5-->
+<!--class "fa fa-star" là icon ngôi sao được thư viện fontawesome cung cấp-->
+<!--Class "btn btn-primary" dùng để tạo nút thêm vào giỏ hàng do Bootstrap cung cấp-->
+<!--Bàn SOfa-Ghế Sofa-->
+      <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
+          <h2><strong>Bàn Sofa-Ghế Sofa</strong></h2>
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../images/products/phong_khach/ghe_sofa_1.jpg" class="card-img-top" alt="sofa">
+            <div class="card-body">
+              <h5 class="card-title">Ghế Sofa Gỗ Cao Su Tự Nhiên</h5> 
+              <p class="card-text"><b>9,290,200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 14.500.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0001')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0001')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+            <div class="card " style="width: 18rem;margin-top: 20px;">
+              <img src="../images/products/phong_khach/ghe_sofa2.jpg" class="card-img-top" alt="Sofa">
+              <div class="card-body">
+                <h5 class="card-title">Ghế Sofa Geral KOGE 701</h5><br>
+                <p class="card-text"><b>9,390,200 VNĐ </b><s style="color:#ef683a; font-size: 15px;"> 14,240,000 VNĐ</s><br>
+                  <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(2) <i style="float: right; font-size: 15px;">Đã bán 36</i></p>
+                <a href="#" class="btn btn-primary" onclick="addCart('sp0002')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0002')"><i class="fa-regular fa-heart fa-lg"></i></a>
+              </div>
+            </div>
+              <div class="card " style="width: 18rem;margin-top: 20px;">
+                <img src="../images/products/phong_khach/ghe_sofa3.jpg" class="card-img-top" alt="Bộ bàn ăn">
+                <div class="card-body">
+                  <h5 class="card-title">Bộ Bàn Trà Gỗ và 4 Ghế Sofa Đơn</h5>
+                  <p class="card-text"><b>6,990,000 VNĐ </b><s style="color:#ef683a; font-size: 15px;"> 8,160,000 VNĐ</s><br>
+                    <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(25)<i style="float: right; font-size: 15px;">Đã bán 123</i></p>
+                  <a href="#" class="btn btn-primary" onclick="addCart('sp0003')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0003')"><i class="fa-regular fa-heart fa-lg"></i></a>
+                </div>
+              </div>
+                <div class="card " style="width: 18rem;margin-top: 20px;">
+                  <img src="../images/products/phong_khach/ghe_sofa4.jpg" class="card-img-top" alt="Bộ bàn ăn">
+                  <div class="card-body">
+                    <h5 class="card-title">Bộ Bàn Trà 1 Bàn 3 Ghế </h5><br>
+                    <p class="card-text"><b>3,200,000 VNĐ </b><s style="color:#ef683a; font-size: 15px;"> 4,500,000 VNĐ</s><br>
+                      <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(51)<i style="float: right; font-size: 15px;">Đã bán 120</i></p>
+                   <a href="#" class="btn btn-primary" onclick="addCart('sp0004')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                   <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0004')"><i class="fa-regular fa-heart fa-lg"></i></a>
+                  </div>
+                </div>
+        </div>
+        <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
+                <div class="card" style="width: 18rem;margin-top: 20px;">
+                    <img src="../images/products/phong_khach/phong_khach_3.webp" class="card-img-top" alt="sofa">
+                    <div class="card-body">
+                      <h5 class="card-title">Ghế Sofa Gỗ Tự Nhiên</h5> 
+                      <p class="card-text"><b>6,790,200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 11.500.000 VNĐ</s><br>
+                        <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(30) <i style="float: right; font-size: 15px;">Đã bán 421</i></p>
+                      <a href="#" class="btn btn-primary" onclick="addCart('lr3001')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                      <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3001')"><i class="fa-regular fa-heart fa-lg"></i></a>
+                    </div>
+                </div>
+                  <div class="card" style="width: 18rem;margin-top: 20px;">
+                    <img src="../images/products/phong_khach/phong_khach1.jpg" class="card-img-top" alt="sofa">
+                    <div class="card-body">
+                      <h5 class="card-title">Ghế Sofa Da Màu Nâu</h5> 
+                      <p class="card-text"><b>9,290,200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 14.500.000 VNĐ</s><br>
+                        <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+                      <a href="#" class="btn btn-primary" onclick="addCart('lr3002')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                      <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3002')"><i class="fa-regular fa-heart fa-lg"></i></a>
+                    </div>
+                  </div>
+                <div class="card" style="width: 18rem;margin-top: 20px;">
+                    <img src="../images/products/phong_khach/phong_khach_2.jpg" class="card-img-top" alt="sofa">
+                    <div class="card-body">
+                      <h5 class="card-title">Bàn Sofa Phòng Khách Mặt Kính</h5>
+                      <p class="card-text"><b>1,900,200 VNĐ</b><br>
+                        <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(120) <i style="float: right; font-size: 15px;">Đã bán 452</i></p>
+                      <a href="#" class="btn btn-primary" onclick="addCart('lr3003')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                      <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3003')"><i class="fa-regular fa-heart fa-lg"></i></a>
+                    </div>
+                </div> 
+              </div>  
+<!--Kệ TIVI-->
+        <div style="padding-top: 20px; padding-bottom: 20px;" class="item">
+          <h2><strong>Kệ TiVi</strong></h2>
+          <div class="card" style="width: 18rem;margin-top: 20px;">
+            <img src="../images/products/phong_khach/ke_tivi_1.webp" class="card-img-top" alt="Kệ TIVI">
+            <div class="card-body">
+              <h5 class="card-title">Kệ TIVI ACKLEY</h5> <br>
+              <p class="card-text"><b>4,950,000 VNĐ</b><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(7) <i style="float: right; font-size: 15px;">Đã bán 65</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('lr3004')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3004')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div> 
+        <div class="card" style="width: 18rem;margin-top: 20px;">
+            <img src="../images/products/phong_khach/ke_tivi_2.webp" class="card-img-top" alt="Kệ TIVI">
+            <div class="card-body">
+              <h5 class="card-title">Kệ TIVI CREAT</h5> <br>
+              <p class="card-text"><b>4,375,000 VNĐ </b><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(57) <i style="float: right; font-size: 15px;">Đã bán 254</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('lr3005')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3005')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;margin-top: 20px;">
+            <img src="../images/products/phong_khach/ke_tivi_3.webp" class="card-img-top" alt="Kệ TIVI">
+            <div class="card-body">
+              <h5 class="card-title">Kệ TIVI TERRACE</h5> <br>
+              <p class="card-text"><b>5,050,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;">7,160,000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange " ></i>(170) <i style="float: right; font-size: 15px;">Đã bán 435</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('lr3006')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3006')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;margin-top: 20px;">
+            <img src="../images/products/phong_khach/ke_tivi_4.webp" class="card-img-top" alt="Kệ TIVI">
+            <div class="card-body">
+              <h5 class="card-title">Kệ TIVI DENNING</h5><br> 
+              <p class="card-text"><b>4,600,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;">5,400,000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(35) <i style="float: right; font-size: 15px;">Đã bán 125</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('lr3007')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3007')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+        </div>
+        </div>
+        <div style="padding-top: 20px; padding-bottom: 20px;" class="item">
+          <div class="card" style="width: 18rem;margin-top: 20px;">
+            <img src="../images/products/phong_khach/ke_tivi_6.webp" class="card-img-top" alt="Kệ TIVI">
+            <div class="card-body">
+              <h5 class="card-title">Kệ TIVI CAMBRIDGE</h5> <br>
+              <p class="card-text"><b>6,280,000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 9,300,000</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(10) <i style="float: right; font-size: 15px;">Đã bán 83</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('lr3008')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3008')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div> 
+          <div class="card" style="width: 18rem;margin-top: 20px;">
+            <img src="../images/products/phong_khach/ke_tivi_7.jpg" class="card-img-top" alt="Kệ TIVI">
+            <div class="card-body">
+              <h5 class="card-title">Kệ TIVI Gỗ LEEDS 701</h5> <br>
+              <p class="card-text"><b>4,490,000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 6,890,000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(32) <i style="float: right; font-size: 15px;">Đã bán 197</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('lr3009')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3009')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>     
+        </div>  
+<!--Kệ Trang Trí-->
+        <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
+            <h2><strong>Kệ Trang Trí</strong></h2>
+            <div class="card" style="width: 18rem;margin-top: 20px;">
+                <img src="../images/products/phong_khach/ke_trang_tri_1.webp" class="card-img-top" alt="Kệ Trang Trí">
+                <div class="card-body">
+                  <h5 class="card-title">Kệ Trang Trí HOOPER</h5> <br>
+                  <p class="card-text"><b>7,455,000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 10,690,000 VNĐ</s><br>
+                    <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(31) <i style="float: right; font-size: 15px;">Đã bán 213</i></p>
+                  <a href="#" class="btn btn-primary" onclick="addCart('lr3010')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3010')"><i class="fa-regular fa-heart fa-lg"></i></a>
+                </div>
+              </div>  
+              <div class="card" style="width: 18rem;margin-top: 20px;">
+                <img src="../images/products/phong_khach/ke_trang_tri2.webp" class="card-img-top" alt="Kệ Trang Trí">
+                <div class="card-body">
+                  <h5 class="card-title">Kệ Trang Trí DUNDEE</h5> <br>
+                  <p class="card-text"><b>4,990,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 8,100,000 VNĐ</s><br>
+                    <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(4) <i style="float: right; font-size: 15px;">Đã bán 32</i></p>
+                  <a href="#" class="btn btn-primary" onclick="addCart('lr3011')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3011')"><i class="fa-regular fa-heart fa-lg"></i></a>
+                </div>
+              </div> 
+              <div class="card" style="width: 18rem;margin-top: 20px;">
+                <img src="../images/products/phong_khach/ke_trang_tri_3.webp" class="card-img-top" alt="Kệ Trang Trí">
+                <div class="card-body">
+                  <h5 class="card-title">Kệ Trang Trí SAVANNAH</h5> <br>
+                  <p class="card-text"><b>3,560,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 4,450,000 VNĐ</s><br>
+                    <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(11) <i style="float: right; font-size: 15px;">Đã bán 111</i></p>
+                  <a href="#" class="btn btn-primary" onclick="addCart('lr3012')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3012')"><i class="fa-regular fa-heart fa-lg"></i></a>
+                </div>
+              </div>  
+              <div class="card" style="width: 18rem;margin-top: 20px;">
+                <img src="../images/products/phong_khach/ke_trang_tri_4.webp" class="card-img-top" alt="Kệ Trang Trí">
+                <div class="card-body">
+                  <h5 class="card-title">Kệ Trang Trí NEW CITY</h5> <br>
+                  <p class="card-text"><b>6,300,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 7,450,000 VNĐ</s><br>
+                    <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(51) <i style="float: right; font-size: 15px;">Đã bán 211</i></p>
+                  <a href="#" class="btn btn-primary" onclick="addCart('lr3013')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3013')"><i class="fa-regular fa-heart fa-lg"></i></a>
+                </div>
+              </div>
+           </div>
+           <div style="padding-top: 20px; padding-bottom: 20px;" class="item">
+              <div class="card" style="width: 18rem;margin-top: 20px;">
+                <img src="../images/products/phong_khach/ke_trang_tri_5.webp" class="card-img-top" alt="Kệ Trang Trí">
+                <div class="card-body">
+                  <h5 class="card-title">Kệ Trang Trí Geral 4</h5> <br>
+                  <p class="card-text"><b>3,790,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 7,580,000 VNĐ</s><br>
+                    <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(4) <i style="float: right; font-size: 15px;">Đã bán 45</i></p>
+                  <a href="#" class="btn btn-primary" onclick="addCart('lr3014')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3014')"><i class="fa-regular fa-heart fa-lg"></i></a>
+                </div>
+              </div> 
+            </div>
+<!--TỦ Giày-->
+            <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
+            <h2><strong>Tủ Giày-Tủ Trang Trí</strong></h2>
+            <div class="card" style="width: 18rem;margin-top: 20px;">
+                <img src="../images/products/phong_khach/tu_giay_1.jpg" class="card-img-top" alt="Tủ Giày">
+                <div class="card-body">
+                  <h5 class="card-title">Tủ Giày Trang Trí Gỗ Geral 1</h5> 
+                  <p class="card-text"><b>2,690,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 3,490,000 VNĐ</s><br>
+                    <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(24) <i style="float: right; font-size: 15px;">Đã bán 325</i></p>
+                  <a href="#" class="btn btn-primary" onclick="addCart('lr3015')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3015')"><i class="fa-regular fa-heart fa-lg"></i></a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;margin-top: 20px;">
+                <img src="../images/products/phong_khach/tu_giay_2.jpg" class="card-img-top" alt="Tủ Giày">
+                <div class="card-body">
+                  <h5 class="card-title">Tủ Giày Trang Trí Gỗ Geral 2</h5> 
+                  <p class="card-text"><b>3,490,000 VNĐ </b> <br>
+                    <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(76) <i style="float: right; font-size: 15px;">Đã bán 223</i></p>
+                  <a href="#" class="btn btn-primary" onclick="addCart('lr3016')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3016')"><i class="fa-regular fa-heart fa-lg"></i></a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;margin-top: 20px;">
+                <img src="../images/products/phong_khach/tu_giay_3.jpg" class="card-img-top" alt="Tủ Giày">
+                <div class="card-body">
+                  <h5 class="card-title">Tủ Giày Trang Trí Gỗ Geral 3</h5>
+                  <p class="card-text"><b>3,890,000 VNĐ </b> <br>
+                    <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(20) <i style="float: right; font-size: 15px;">Đã bán 160</i></p>
+                  <a href="#" class="btn btn-primary" onclick="addCart('lr3017')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3017')"><i class="fa-regular fa-heart fa-lg"></i></a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;margin-top: 20px;">
+                <img src="../images/products/phong_khach/tu_giay_4.jpg" class="card-img-top" alt="Tủ Giày">
+                <div class="card-body">
+                  <h5 class="card-title">Tủ Giày Trang Trí Gỗ Geral 4</h5> 
+                  <p class="card-text"><b>4,090,000 VNĐ </b><s style="color:#ef683a; font-size: 15px;"> 4,490,000 VNĐ</s> <br>
+                    <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(34) <i style="float: right; font-size: 15px;">Đã bán 114</i></p>
+                  <a href="#" class="btn btn-primary" onclick="addCart('lr3018')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('lr3018')"><i class="fa-regular fa-heart fa-lg"></i></a>
+                </div>
+              </div>
+        </div> 
+            <!--icon có chức năng nhắn tin với cửa hàng-->
+<!--chức năng của các hàm Javascript được mô tả trong file total.js-->
+        <div class="chat-icon" onclick="toggleChat()">
+          <i class="fas fa-comment"></i>
+      </div>
+      <div class="chat-box" style="border-radius: 16px;">
+          <div class="chat-header">
+              <h2>Chat với Lộc Trời</h2>
+              <span class="close-button" onclick="toggleChat()">&times;</span>
+          </div>
+          <div class="chat-content" id="chat-content">
+              <!-- Tin nhắn sẽ được hiển thị ở đây -->
+          </div>
+          <div class="chat-input">
+              <input type="text" id="message-input" placeholder="Nhập tin nhắn..." style="border-radius: 16px;">
+              <button style="margin: 2px;" onclick="sendMessage()">Gửi</button>
+          </div>
+          <script src="../js/total.js"></script>
+      </div>
+      </main>
+      <footer id="footer", style="display: flex; flex-wrap: wrap;">
+        <div class="container ">
+          <div class="row">
+  <!--Giới thiệu về Geral-->
+            <div class="col-sm">
+              <h4>Nông Phẩm Lộc Trời</h4>
+              <p  class="detail">lộc trời tuy chỉ là một thương hiệu nông phẩm mới phát triển thời gian gần đây nhưng cam kết sẽ luôn mang đến cho khách hàng những trải nghiệm mua hàng tuyệt vời nhất.</p>
+            </div>
+  <!--Chính sách-->
+            <div class="col-sm">
+              <h4>Dịch Vụ</h4>
+              <ul class="unorderlist">
+              <li><a href="./sale_policy.html" title="Chính Sách Bán Hàng">Chính Sách Bán Hàng</a></li>
+              <li><a href="./ship.html" title="Chính Sách Giao Hàng & Lắp Đặt">Chính Sách Giao Hàng</a></li>
+              <li><a href="./return_Policy.html" title="Chính Sách Bảo Hành - Đổi Trả">Chính Sách Bảo Hành - Đổi Trả</a></li>
+              <li><a href="./G_vip.html" title="Khách Hàng Thân Thiết - G.VIP">Khách Hàng Thân Thiết - G.VIP</a></li>
+              <li><a href="#" title="Câu Hỏi Thường Gặp">Câu Hỏi Thường Gặp</a></li>
+             </ul>
+            </div>
+  <!--THông tin liên hệ-->
+  <!--Các class "fa-solid fa-location-dot", "fa fa-phone", "fa fa-phone", "fa fa-envelope"
+  là các icon được cung cấp bởi thư viện Fontawesome-->
+            <div class="col-sm">
+              <h4>Thông tin liên hệ</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Trường Đại Học Cần Thơ - Đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Thành Phố Cần Thơ.</p>
+              <p><i class="fa fa-phone" aria-hidden="true"></i> 0123456789 (Hotline)</p>
+              <p><i class="fa fa-phone" aria-hidden="true"></i> 0122333444455555 (Đội Giao Hàng)</p>
+              <p><i class="fa fa-envelope" aria-hidden="true"></i> cskh@geral.com</p>
+              <div class="social">
+  <!--các icon mạng xã hội-->
+               <a href="#"  class="facebook" title="Facebook" ><img  class="facebook" src="../images/social_media/facebook.png" alt=""></a>
+               <a href="#" class="instagram" title="Instagram" ><img src="../images/social_media/ingstargam.webp" alt=""></a>
+               <a href="#" class="tiktok" title="Tiktok" ><img src="../images/social_media/tiktok.webp" alt=""></a>
+               <a href="#" class="youtube" title="Youtube" ><img class="youtbe" src="../images/social_media/youtube.webp" alt=""></a>
+              </div>
+            </div>
+  <!--Các icon thanh toán-->
+            <div class="col-sm">
+              <h4  class="atm-content">Thanh toán miễn phí</h4>
+                <div class="atm">
+                   <img src="../images/paymentLogo/ATM_logo.png" alt="">
+                   <img src="../images/paymentLogo/logo-jcb.png" alt="">
+                   <img src="../images/paymentLogo/logo-master.png" alt="">
+                   <img src="../images/paymentLogo/logo-samsungpay.png" alt="">
+                   <img src="../images/paymentLogo/logo-visa.png" alt="">
+                   <img src="../images/paymentLogo/logo-vnpay.png" alt="">
+                </div>  
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
