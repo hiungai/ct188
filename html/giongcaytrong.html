@@ -75,18 +75,18 @@
 </header>
       <main>
 <!--Ảnh minh họa đầu trang-->
-        <img src="../images/Logo.png" alt="Phòng bếp" style="width: 25%; height: 50%; object-fit: cover; " >
+        <img src="../images/Logo.png" style="width: 25%; height: auto; object-fit: cover; " >
 <!--Phần sản phẩm: sử dụng các thẻ div có class là "card" được hỗ trợ bởi boostrap5 để hiển thị từng sản phẩm
 dùng class "item " để hiển thị các sản phẩm thống nhất với nhau-->
 <!--Thẻ s để tạo một nội dung bị gạch ngang, dùng để hiển thị phần giá của sản phẩm trc khi được giảm giá-->
 <!--class "card title", "name-item-font", "card-text", "name-item-font", "btn bnt primary" được hỗ trợ bởi bootstrap5-->
 <!--class "fa fa-star" là icon ngôi sao được thư viện fontawesome cung cấp-->
 <!--Class "btn btn-primary" dùng để tạo nút thêm vào giỏ hàng do Bootstrap cung cấp-->
-<!--Bàn Ăn-->
+<!--Hạt Giống Bắp-->
         <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
           <h2><strong class="name-item-font">Hạt Giống Bắp</strong></h2>
           <div class="card " style="width: 18rem;margin-top: 20px;">
-            <img src="../images/hinhanh/giongcaytrong/Bắp Nù.png" class="card-img-top" alt="Giống Bắp">
+            <img src="../images/hinhanh/giongcaytrong/Bắp Nù.png" class="card-img-top" >
             <div class="card-body">
               <h5 class="card-title name-item-font">Giống bắp nù</h5> <br>
               <p class="card-text"><b>90.250 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 120.500 VNĐ</s><br>
@@ -96,7 +96,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
             </div>
           </div>
             <div class="card " style="width: 18rem;margin-top: 20px;">
-              <img src="../images/hinhanh/giongcaytrong/Giống Bắp Lai B.9034.png" class="card-img-top" alt="Bộ bàn ăn">
+              <img src="../images/hinhanh/giongcaytrong/Giống Bắp Lai B.9034.png" class="card-img-top" >
               <div class="card-body">
                 <h5 class="card-title name-item-font">Giống bắp lai B.9034</h5>
                 <p class="card-text"><b>40,015 VNĐ </b><s style="color:#ef683a; font-size: 15px;"> 50,300 VNĐ</s><br>
@@ -105,21 +105,20 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                 <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('k2002')"><i class="fa-regular fa-heart fa-lg"></i></a>
               </div>
             </div>
-<!--Tủ Bếp Gỗ-->
         <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
-         <h2><strong class="name-item-font">Hạt Giống Lúa</strong></h2>
+          <h2><strong class="name-item-font">Hạt Giống Lúa</strong></h2>
           <div class="card " style="width: 18rem;margin-top: 20px;">
-            <img src="../images/hinhanh/giongcaytrong/smart56.jpg" class="card-img-top" alt="Giống Lúa">
+            <img src="../images/hinhanh/giongcaytrong/Giống Lúa IR50404.png" class="card-img-top">
             <div class="card-body">
-              <h5 class="card-title name-item-font">Giống lúa thuần Smart56</h5> <br>
+              <h5 class="card-title name-item-font">Giống lúa thuần Ỉ50404</h5> <br>
               <p class="card-text"><b>92.250 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 122.500 VNĐ</s><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(96) <i style="float: right; font-size: 15px;">Đã bán 545</i></p>
               <a href="#" class="btn btn-primary" onclick="addCart('k2001')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
               <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('k2001')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div>
-        <div class="card " style="width: 18rem;margin-top: 20px;">
-            <img src="../images/hinhanh/giongcaytrong/Giống Lúa JASMINE 85.png" class="card-img-top" alt="Bộ bàn ăn">
+            <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../images/hinhanh/giongcaytrong/Giống Lúa JASMINE 85.png" class="card-img-top" >
             <div class="card-body">
               <h5 class="card-title name-item-font">Giống lúa jasmine 85</h5>
               <p class="card-text"><b>60,015 VNĐ </b><s style="color:#ef683a; font-size: 15px;"> 75,300 VNĐ</s><br>
@@ -127,7 +126,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <a href="#" class="btn btn-primary" onclick="addCart('k2002')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
               <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('k2002')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
-        </div>
+            </div>
               <!--icon có chức năng nhắn tin với cửa hàng-->
 <!--chức năng của các hàm Javascript được mô tả trong file total.js-->
         <div class="chat-icon" onclick="toggleChat()">
